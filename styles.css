@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist Mono', monospace;
+    color: #f4f4f9;
+    background-color: #191c1e;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #191c1e;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #393e41;
+}
+
+.header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+}
+
+.logo .name {
+    color: #00d4ff;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.logo .highlight {
+    color: #af77ff;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+nav ul li a .paren {
+    color: #af77ff;
+    font-weight: normal;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #00d4ff;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.project {
+    background: #222527;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 1px solid #393e41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project p {
+    padding-bottom: 10px;
+}
+
+.project-link {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #ff4081;
+}
+
+footer {
+    background-color: #222527;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: #f4f4f9;
+    border-top: 1px solid #393e41;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .logo .name, .logo .highlight {
+        font-size: 1.5em;
+    }
+}
